@@ -1,0 +1,8 @@
+<h1>this is the home page</h1>
+{{#if this.isPosting}}
+  <iframe src="/job-posting" title="job posting"></iframe>
+{{else}}
+  <div>
+    <button type="button" {{action "startPosting"}}>start job posting</button>
+  </div>
+{{/if}}
